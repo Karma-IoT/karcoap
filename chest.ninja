@@ -1,0 +1,6 @@
+chest_source_dir = src
+chest_binary_dir = build
+
+build $chest_binary_dir/coap.o: cc $chest_source_dir/coap.c
+
+build $chest_binary_dir/karcoap.a: ar $chest_binary_dir/coap.o
